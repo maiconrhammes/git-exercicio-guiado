@@ -7,14 +7,12 @@ alunos = [
 def calcular_media(n1, n2):
     return (n1 + n2) / 2
 
-def calcular_media2(n1, n2):
-    return (n1 + n2) / 2
 
 def mostrar_relatorio():
     print("=== RELATORIO DE ALUNOS ===")
     for a in alunos:
         media = calcular_media(a["nota1"], a["nota2"])
-        media2 = calcular_media2(a["nota1"], a["nota2"])
+        
 
         if media >= 7:
             status = "Aprovado"
@@ -27,7 +25,6 @@ def mostrar_relatorio():
         print("Nota 1:", a["nota1"])
         print("Nota 2:", a["nota2"])
         print("Media 1:", media)
-        print("Media 2:", media2)
         print("Status:", status)
         print("----------------------")
 
